@@ -1,27 +1,47 @@
-
-
-| Paquete                            | Qué hace                        | Instalar o CDN | Última versión confirmada                                                                        | Ideal para           |
-| ---------------------------------- | ------------------------------- | -------------- | ------------------------------------------------------------------------------------------------ | -------------------- |
-| markmap-lib                        | Motor principal (programadores) | npm            | 0.18.12 [Yarn+3npm+3Markmap+3](https://www.npmjs.com/package/markmap-lib?utm_source=chatgpt.com) | Desarrolladores      |
-| markmap-cli                        | Convierte `.md` → `.html`       | npm            | 0.18.12 [npm+2jsDelivr+2](https://www.npmjs.com/package/markmap-cli?utm_source=chatgpt.com)      | Usuarios técnicos    |
-| markmap-view                       | Interfaz visual avanzada        | npm            | 0.18.12 [npm+1](https://www.npmjs.com/package/markmap-view?utm_source=chatgpt.com)               | Integraciones web    |
-| **markmap-render**                 | CLI simple para generar mapas   | npm            |                                                                                                  | Productividad rápida |
-| **markmap-autoloader**             | Mapa directo desde HTML         | CDN            |                                                                                                  | Educadores y web     |
-| markmap (versión “global” antigua) |                                 |                | 0.6.1 [npm+1](https://www.npmjs.com/package/markmap?utm_source=chatgpt.com)                      |                      |
-**npm** significa **Node Package Manager** — es el **gestor de paquetes** (o repositorio de librerías) para **Node.js**, que es un entorno de ejecución de JavaScript.
-
+---
+title: markmap
+markmap:
+  colorFreezeLevel: 2
+mindmap-plugin: basic
+display-mode: outline
 ---
 
-## 🧭 **En palabras simples**
+## Links
 
-> **npm** es como una “tienda de aplicaciones”, pero para programadores.
+- [Website](https://markmap.js.org/)
+- [GitHub](https://github.com/gera2ld/markmap)
 
-Permite:
+## Related Projects
 
-- **Instalar** herramientas o librerías ya hechas (por ejemplo, `markmap`, `react`, `express`, etc.)
-    
-- **Compartir** tus propios proyectos con otros.
-    
-- **Actualizar** dependencias fácilmente.
+- [coc-markmap](https://github.com/gera2ld/coc-markmap) for Neovim
+- [markmap-vscode](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) for VSCode
+- [eaf-markmap](https://github.com/emacs-eaf/eaf-markmap) for Emacs
 
-https://markmap.js.org/repl
+## Features
+
+Note that if blocks and lists appear at the same level, the lists will be ignored.
+
+### Lists
+
+- **strong** ~~del~~ *italic* ==highlight==
+- `inline code`
+- [ ] checkbox
+- Katex: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ <!-- markmap: fold -->
+  - [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)
+- Now we can wrap very very very very long text with the `maxWidth` option
+- Ordered list
+  1. item 1
+  2. item 2
+
+### Blocks
+
+```js
+console.log('hello, JavaScript')
+```
+
+| Products | Price |
+| -------- | ----- |
+| Apple    | 4     |
+| Banana   | 2     |
+
+![](https://markmap.js.org/favicon.png)
